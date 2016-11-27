@@ -1,0 +1,41 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item class="input">
+      <ion-label floating>Username</ion-label>
+      <ion-input type="email" value=""></ion-input>
+    </ion-item>
+    <ion-item class="input">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" value=""></ion-input>
+    </ion-item>
+    
+    <ion-item class="authButton">
+      
+      <button ion-button  block class="signin login-color ">Login</button>
+      <button ion-button  block color="light" class="signin">Signup</button>
+      
+    </ion-item>
+    <ion-item class="authButton">
+      
+      <button ion-button  class="login" style="background-color: #3b5998" (click)="facebookLogin()">Login via Facebook</button>
+      <button ion-button  class="login" style="background-color: #dd4b39" (click)="googleLogin()"> Login via Gmail</button>
+     
+    </ion-item>
+  </ion-list>
+
+  
+</ion-content>
